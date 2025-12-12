@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicFest 2025 - Tickets</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>MusicFest 2025</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lineup.html">Lineup</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="tickets.html" class="active">Tickets</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Book Your Tickets</h2>
+
+    <form id="ticketForm">
+
+        <label>Full Name:
+            <input type="text" id="name" required>
+        </label>
+
+        <label>Email Address:
+            <input type="email" id="email" required>
+        </label>
+
+        <label>Phone Number:
+            <input type="tel" id="phone" required>
+        </label>
+
+        <label>Number of Tickets:
+            <input type="number" id="quantity" min="1" max="10" required>
+        </label>
+
+        <label>Ticket Type:
+            <select id="ticketType">
+                <option>General Admission</option>
+                <option>VIP</option>
+                <option>Premium</option>
+            </select>
+        </label>
+
+        <label>Payment Method:
+            <select id="payment">
+                <option>Credit Card</option>
+                <option>Debit Card</option>
+                <option>PayPal</option>
+            </select>
+        </label>
+
+        <label>Special Requirements:
+            <textarea id="special"></textarea>
+        </label>
+
+        <label class="terms">
+            <input type="checkbox" id="terms" required>
+            I agree to the terms and conditions
+        </label>
+
+        <button type="submit" class="btn">Submit</button>
+        <button type="reset" class="btn reset">Reset</button>
+
+        <p id="message"></p>
+
+    </form>
+</main>
+
+<footer>
+    <p>© 2025 MusicFest. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
